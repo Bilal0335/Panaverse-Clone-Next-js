@@ -1,11 +1,11 @@
 import Link from "next/link";
 import logo from "../../../public/logo.png";
 import Image from "next/image";
-import Wrapper from "@/component/shared/Wrapper";
+import Wrapper from "../shared/Wrapper";
 const Header = () => {
   return (
     <Wrapper>
-      <header className="sticky top-0 flex items-center justify-between max-w-screen-xl px-2 py-6 mx-auto bg-white">
+      <header className="sticky top-0 flex items-center justify-between py-6 bg-white">
         <div>
           {/* <h2 className="text-xl font-bold">Panaverse Logo</h2> */}
           <Image src={logo} alt="Panaverse DAO Logo" width={98} height={56} />
