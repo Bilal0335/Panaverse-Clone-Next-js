@@ -1,8 +1,10 @@
+import Hero from "@/component/widgets/Hero";
 export default function Home() {
   return (
     <>
       <main>
-        <h1 className="text-red-700">Bilal</h1>
+        {/* Hero Section */}
+        <Hero />
       </main>
     </>
   );
