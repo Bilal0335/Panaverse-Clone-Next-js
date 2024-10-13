@@ -26,7 +26,7 @@ const Hero = () => {
               Cloud, Edge, Ambient Computing/IoT, Network Automation, and
               Bioinformatics Technologies
             </p>
-            <div className="mt-4 mr-5">
+            <div className="mt-4">
               <Button text={"Learn More"}/>
             </div>
           </div>

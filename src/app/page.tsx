@@ -1,3 +1,4 @@
+import CoreTrack from "@/component/widgets/CoreTrack";
 import Hero from "@/component/widgets/Hero";
 export default function Home() {
   return (
@@ -5,6 +6,8 @@ export default function Home() {
       <main>
         {/* Hero Section */}
         <Hero />
+        {/* Core Track Section */}
+        <CoreTrack />
       </main>
     </>
   );
