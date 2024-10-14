@@ -6,7 +6,7 @@ const CoreTrack = () => {
   return (
     <section className="mt-16 lg:mt-28">
       <Wrapper>
-        <div className="max-w-screen-sm">
+        <div className="max-w-screen-md">
           {/* Core section */}
           <SectionOne
             subtitle="Program of Studies"
@@ -19,6 +19,13 @@ const CoreTrack = () => {
           />
           <div className="mt-4">
             <Button text={"Enroll Now"} />
+          </div>
+        </div>
+        <div>
+          <div>
+            <h4>Quarter I</h4>
+            <p>CS-101: Object-Oriented Programming using TypeScript</p>
+            <span>1</span>
           </div>
         </div>
       </Wrapper>
