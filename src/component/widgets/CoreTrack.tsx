@@ -22,6 +22,7 @@ const CoreTrack = () => {
             <Button text={"Enroll Now"} />
           </div>
         </div>
+        {/* Secftion Box */}
         <div className="flex flex-col my-20 space-x-2 space-y-4 md:flex-row md:space-y-0">
           <QuaterBox
             title={"Quarter I"}
