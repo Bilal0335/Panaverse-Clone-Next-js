@@ -43,16 +43,26 @@ const CoreTrack = () => {
           </div>
         </div>
         {/* Secftion Box */}
-        <div className="flex flex-col my-20 space-x-2 space-y-4 md:flex-row md:space-y-0">
-          {
-            CoreTrackData.map((items)=>{
-              console.log(items.description)
-              return (<div>
-              {items.header}
-              </div>)
-            })
-          }
-          
+        {/* flex-col my-20 space-x-2 space-y-4 md:flex-row md:space-y-0 */}
+        <div className="flex flex-col my-20 gap-x-8 gap-y-6 md:flex-row">
+          {CoreTrackData.map((items, i) => (
+            <div
+              className="relative flex flex-col justify-center flex-1 px-10 py-16 border rounded-md"
+              key={items.number}
+            >
+              <h4 className="text-xl font-bold">{items.header}</h4>
+              <p className="mt-2 text-sm font-normal text-slate-600">
+                {items.description}
+              </p>
+              <span
+                className="absolute -top-8 font-bold text-gray-200 text-[170px] right-10 -z-10 
+                transition-transform duration-100 hover:scale-y-110 ease-in-out"
+              >
+                {i + 1}
+              </span>
+            </div>
+          ))}
+
           {/* <QuaterBox
             title={"Quarter I"}
             desc={"CS-101: Object-Oriented Programming using TypeScript"}
@@ -64,7 +74,7 @@ const CoreTrack = () => {
               "W2-201: Developing Planet-Scale Web 2.0 Serverless Cloud Cloud Apps and APIs using Next.js 13 and Cloud Development Kit (CDK) for Terraform"
             }
             number={2}
-          />
+          /> 
           <QuaterBox
             title={"Quarter I"}
             desc={

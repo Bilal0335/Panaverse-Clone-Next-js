@@ -2,7 +2,7 @@ import { FC } from "react";
 const QuaterBox: FC<{ title: string; desc: string; number: number }> = ({
   title,
   desc,
-  number 
+  number
 }) => {
   return (
     <div className="">
