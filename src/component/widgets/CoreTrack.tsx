@@ -42,26 +42,26 @@ const CoreTrack = () => {
             <Button text={"Enroll Now"} />
           </div>
         </div>
+
         {/* Secftion Box */}
-        {/* flex-col my-20 space-x-2 space-y-4 md:flex-row md:space-y-0 */}
         <div className="flex flex-col my-20 gap-x-8 gap-y-6 md:flex-row">
           {CoreTrackData.map((items, i) => (
             <div
-              className="relative flex flex-col justify-center flex-1 px-10 py-16 border rounded-md"
+              className="relative flex flex-col justify-center flex-1 px-10 py-16 transition-transform duration-300 border rounded-md cursor-pointer group"
               key={items.number}
             >
-              <h4 className="text-xl font-bold">{items.header}</h4>
+              <h4 className="text-xl font-bold transition-transform duration-700 ease-in-out group-hover:text-teal-900">
+                {items.header}
+              </h4>
               <p className="mt-2 text-sm font-normal text-slate-600">
                 {items.description}
               </p>
-              <span
-                className="absolute -top-8 font-bold text-gray-200 text-[170px] right-10 -z-10 
-                transition-transform duration-100 hover:scale-y-110 ease-in-out"
-              >
+              <span className="absolute -top-8 font-bold text-gray-200 text-[170px] right-10 -z-10 transition-transform duration-500 scale-y-110 group-hover:scale-y-125 ease-in-out">
                 {i + 1}
               </span>
             </div>
           ))}
+          
 
           {/* <QuaterBox
             title={"Quarter I"}
