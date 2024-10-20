@@ -7,7 +7,6 @@ interface IProps {
 
 const QuaterBox: FC<IProps> = ({ title, desc, number }) => {
   return (
-   
     <div className="relative px-10 py-10 border rounded-md">
       <h4 className="text-lg font-bold">{title}</h4>
       <p className="mt-2 text-slate-600">{desc}</p>
@@ -15,7 +14,6 @@ const QuaterBox: FC<IProps> = ({ title, desc, number }) => {
         {number}
       </span>
     </div>
-   
   );
 };
 
