@@ -2,7 +2,7 @@ import { FC } from "react";
 interface IProps {
   title: string;
   desc: string;
-  number: number;
+  number: number | string;
 }
 
 const QuaterBox: FC<IProps> = ({ title, desc, number }) => {
