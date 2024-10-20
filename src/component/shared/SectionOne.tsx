@@ -1,12 +1,14 @@
 import { FC } from "react";
-const SectionOne: FC<{
-  subtitle: string;
+interface SectProps {
+  subtitle?: string;
   title: string;
   description: string;
   titleClassName?: string;
   whiteSpace?: string;
   subdescription?: string;
-}> = ({
+}
+
+const SectionOne: FC<SectProps> = ({
   subtitle,
   title,
   description,
