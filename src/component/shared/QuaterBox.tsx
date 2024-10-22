@@ -4,7 +4,6 @@ interface IProps {
   desc: string;
   number: number | string;
 }
-
 const QuaterBox: FC<IProps> = ({ title, desc, number }) => {
   return (
     <div className="relative px-10 py-10 border rounded-md">

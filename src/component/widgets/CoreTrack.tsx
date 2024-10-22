@@ -1,6 +1,7 @@
 import Wrapper from "@/component/shared/Wrapper";
 import Button from "@/component/shared/Button";
 import SectionOne from "../shared/SectionOne";
+import QuaterBoxTwo from "../shared/QuaterBoxTwo";
 
 const CoreTrackData = [
   {
@@ -24,7 +25,7 @@ const CoreTrackData = [
 
 const CoreTrack = () => {
   const header = "Core Courses\n(Common in All Specializations)";
-  
+
   return (
     <section className="mt-16 lg:mt-28">
       <Wrapper>
@@ -46,20 +47,12 @@ const CoreTrack = () => {
         {/* Section Box */}
         <div className="flex flex-col my-20 gap-x-8 gap-y-6 md:flex-row">
           {CoreTrackData.map((item, i) => (
-            <div
-              className="relative flex flex-col justify-center flex-1 px-10 py-16 transition-transform duration-300 border rounded-md cursor-pointer group"
+            <QuaterBoxTwo
               key={item.number}
-            >
-              <h4 className="text-xl font-bold transition-transform duration-700 ease-in-out group-hover:text-teal-900">
-                {item.header}
-              </h4>
-              <p className="mt-2 text-sm font-normal text-slate-600">
-                {item.description}
-              </p>
-              <span className="absolute -top-8 font-bold text-gray-200 text-[170px] right-10 -z-10 transition-transform duration-500 scale-y-110 group-hover:scale-y-125 ease-in-out">
-                {i + 1}
-              </span>
-            </div>
+              header={item.header}
+              description={item.description}
+              number={i + 1}
+            />
           ))}
         </div>
       </Wrapper>
