@@ -52,14 +52,20 @@ export const SpecalizedTrack = () => {
             </div>
           </div>
           {/* content right */}
-          <div className="flex px-4 py-6 basis-4/12 bg-slate-400">
-            <div>
-              <div className="w-20 h-16 bg-orange-300 rounded"></div>
-            </div>
-            <div>
-              <div className="">
-                <h4>Specialized Track</h4>
-                <h3>Web 3.0 (Blockchain) and Metaverse Specialization</h3>
+          <div className="flex-1 px-4 py-6 basis-4/12 bg-slate-100">
+            <div className="flex items-center gap-x-4">
+              <div>
+                <div className="w-20 h-16 bg-orange-100 rounded"></div>
+              </div>
+              <div>
+                <div className="">
+                  <h4 className="font-medium text-primary">
+                    Specialized Track
+                  </h4>
+                  <h3 className="text-xl font-semibold">
+                    Web 3.0 (Blockchain) and Metaverse Specialization
+                  </h3>
+                </div>
               </div>
             </div>
           </div>
