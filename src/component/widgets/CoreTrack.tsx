@@ -52,6 +52,7 @@ const CoreTrack = () => {
               header={item.header}
               description={item.description}
               number={i + 1}
+              haveBorder={true}
             />
           ))}
         </div>

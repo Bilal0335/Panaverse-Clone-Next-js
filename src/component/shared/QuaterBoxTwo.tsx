@@ -4,12 +4,19 @@ interface IProps {
   header: string;
   description: string;
   number: number;
-//   haveBorder: false;
+  haveBorder?: boolean;
 }
-const QuaterBoxTwo: FC<IProps> = ({ header, description, number }) => {
+const QuaterBoxTwo: FC<IProps> = ({
+  header,
+  description,
+  number,
+  haveBorder = true
+}) => {
   return (
     <div
-      className="relative flex flex-col justify-center flex-1 px-10 py-16 transition-transform duration-300 border rounded-md cursor-pointer group"
+      className={`relative flex flex-col justify-center flex-1 px-10 py-16 transition-transform duration-300 rounded-md cursor-pointer group ${
+        haveBorder && "border"
+      }`}
       key={number}
     >
       <h4 className="text-xl font-bold transition-transform duration-700 ease-in-out group-hover:text-teal-900">

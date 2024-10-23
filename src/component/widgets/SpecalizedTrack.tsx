@@ -1,6 +1,7 @@
 import Wrapper from "@/component/shared/Wrapper";
 import SectionOne from "../shared/SectionOne";
 import { GoArrowRight } from "react-icons/go";
+import QuaterBoxTwo from "../shared/QuaterBoxTwo";
 export const SpecalizedTrack = () => {
   return (
     <section>
@@ -18,8 +19,8 @@ export const SpecalizedTrack = () => {
         </div>
 
         {/* content left */}
-        <div className="mt-10">
-          <div className="px-8 py-8 border rounded shadow-xl border-slate-200">
+        <div className="flex mt-10 gap-x-6 gap-y-8">
+          <div className="px-8 py-8 border rounded shadow-xl border-slate-200 basis-8/12">
             <h4 className="text-lg text-teal-700">Specialized Track</h4>
             <h3 className="text-2xl font-bold">
               Web 3.0 (Blockchain) and Metaverse Specialization
@@ -35,9 +36,34 @@ export const SpecalizedTrack = () => {
               Learn More
               <GoArrowRight className="mx-auto ml-1 transition-transform group-hover:translate-x-1" />
             </button>
+            <div className="flex gap-4 mt-8">
+              <QuaterBoxTwo
+                header="Quarter IV"
+                description="W3-351: Developing Smart Contracts and Planet-Scale Web 3.0 Dapps"
+                number={4}
+                haveBorder={false}
+              />
+              <QuaterBoxTwo
+                header="Quarter V"
+                description="MV-361: Developing Planet-Scale Open Virtual and Augmented Metaverse Experiences"
+                number={5}
+                haveBorder={false}
+              />
+            </div>
+          </div>
+          {/* content right */}
+          <div className="flex px-4 py-6 basis-4/12 bg-slate-400">
+            <div>
+              <div className="w-20 h-16 bg-orange-300 rounded"></div>
+            </div>
+            <div>
+              <div className="">
+                <h4>Specialized Track</h4>
+                <h3>Web 3.0 (Blockchain) and Metaverse Specialization</h3>
+              </div>
+            </div>
           </div>
         </div>
-        {/* content right */}
       </Wrapper>
     </section>
   );
