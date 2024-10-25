@@ -2,25 +2,28 @@ import Wrapper from "@/component/shared/Wrapper";
 import SectionOne from "../shared/SectionOne";
 import { GoArrowRight } from "react-icons/go";
 import QuaterBoxTwo from "../shared/QuaterBoxTwo";
+import ProgrammDataTwo from "../shared/ProgrammDataTwo";
+
 export const SpecalizedTrack = () => {
   return (
     <section>
       <Wrapper>
-        {/* Specialized Track */}
-        {/* header */}
+        {/* Specialized Track Header */}
         <div>
           <SectionOne
             title={"Specialized Tracks:"}
-            description="After completing the first three quarters the participants will select one or more specializations consisting of two courses each."
+            description="After completing the first three quarters, the participants will select one or more specializations consisting of two courses each."
             titleClassName="text-4xl"
             whiteSpace="whitespace-pre-line"
             subdescription="text-sm"
           />
         </div>
 
-        {/* content left */}
-        <div className="flex mt-10 gap-x-6 gap-y-8">
-          <div className="px-8 py-8 border rounded shadow-xl border-slate-200 basis-8/12">
+        {/* Main Content */}
+        <div className="flex flex-col mt-10 md:flex-row gap-x-6 gap-y-8">
+          
+          {/* Left Content */}
+          <div className="px-8 py-8 border rounded shadow-xl border-slate-200 basis-7/12">
             <h4 className="text-lg text-teal-700">Specialized Track</h4>
             <h3 className="text-2xl font-bold">
               Web 3.0 (Blockchain) and Metaverse Specialization
@@ -51,24 +54,12 @@ export const SpecalizedTrack = () => {
               />
             </div>
           </div>
-          {/* content right */}
-          <div className="flex-1 px-4 py-6 basis-4/12 bg-slate-100">
-            <div className="flex items-center gap-x-4">
-              <div>
-                <div className="w-20 h-16 bg-orange-100 rounded"></div>
-              </div>
-              <div>
-                <div className="">
-                  <h4 className="font-medium text-primary">
-                    Specialized Track
-                  </h4>
-                  <h3 className="text-xl font-semibold">
-                    Web 3.0 (Blockchain) and Metaverse Specialization
-                  </h3>
-                </div>
-              </div>
-            </div>
+
+          {/* Right Content */}
+          <div className="px-4 py-6 rounded-lg shadow-lg bg-slate-100 basis-5/12">
+            <ProgrammDataTwo />
           </div>
+
         </div>
       </Wrapper>
     </section>
