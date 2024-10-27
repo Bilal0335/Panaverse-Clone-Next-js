@@ -56,10 +56,9 @@ export const SpecalizedTrack = () => {
           </div>
 
           {/* Right Content */}
-          <div className="px-4 py-6 rounded-lg shadow-lg bg-slate-100 basis-5/12">
+          <div className="px-4 py-6 space-y-4 rounded-lg bg-slate-100 basis-5/12">
             <ProgrammDataTwo />
           </div>
-
         </div>
       </Wrapper>
     </section>
