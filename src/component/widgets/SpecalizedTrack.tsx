@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Wrapper from "@/component/shared/Wrapper";
 import SectionOne from "../shared/SectionOne";
 import { GoArrowRight } from "react-icons/go";
@@ -24,19 +24,19 @@ export const SpecalizedTrack = () => {
         </div>
 
         {/* Main Content */}
-        <div className="flex flex-col mt-10 md:flex-row gap-x-6 gap-y-8">
-          
+        <div className="flex flex-col-reverse mt-10 lg:flex-row md:flex-row gap-x-6 gap-y-8">
           {/* Left Content */}
           <div className="px-8 py-8 border rounded shadow-xl border-slate-200 basis-7/12">
             <h4 className="text-lg text-teal-700">Specialized Track</h4>
             <h3 className="text-2xl font-bold">
-              {selectItems === "wmd" ? "Web 3.0 (Blockchain) and Metaverse Specialization" : "Artificial Intelligence (AI) and Deep Learning Specialization"}
+              {selectItems === "wmd"
+                ? "Web 3.0 (Blockchain) and Metaverse Specialization"
+                : "Artificial Intelligence (AI) and Deep Learning Specialization"}
             </h3>
             <p className="mt-3 text-lg text-slate-600">
-              {selectItems === "wmd" 
+              {selectItems === "wmd"
                 ? "This Web 3.0 and Metaverse specialization focuses on developing full-stack Web 3.0 and Metaverse experiences for the next generation of the internet by specializing in building worlds that merge the best of cutting-edge decentralized distributed blockchains with 3D metaverse client experiences."
-                : "The AI and Deep Learning specialization focuses on building and deploying intelligent APIs using OpenAI models and building custom Deep Learning Tensorflow models."
-              }
+                : "The AI and Deep Learning specialization focuses on building and deploying intelligent APIs using OpenAI models and building custom Deep Learning Tensorflow models."}
             </p>
             <button className="flex items-center px-4 py-2 mt-4 text-lg font-semibold text-teal-700 border border-teal-700 rounded-lg hover:bg-slate-100 group">
               Learn More
@@ -79,7 +79,11 @@ export const SpecalizedTrack = () => {
 
           {/* Right Content */}
           <div className="px-4 py-6 space-y-4 rounded-lg bg-slate-100 basis-5/12">
-            <ProgrammDataTwo selectItems={selectItems} setSelectedItems={setSelectedItems} /> {/* Pass props here */}
+            <ProgrammDataTwo
+              selectItems={selectItems}
+              setSelectedItems={setSelectedItems}
+            />{" "}
+            {/* Pass props here */}
           </div>
         </div>
       </Wrapper>
