@@ -28,6 +28,146 @@ export const programmData = [
     ]
   },
   {
+    slug: "wmd",
+    header: "Web 3.0 (Blockchain) and Metaverse Specialization",
+    description:
+      "This Web 3.0 and Metaverse specialization focuses on developing full-stack Web 3.0 and Metaverse experiences for the next generation of the internet by specializing in building worlds that merge the best of cutting-edge decentralized distributed blockchains with 3D metaverse client experiences.",
+    image: Ai,
+    quarter: [
+      {
+        header: "Quarter IV",
+        description:
+          "W3-351: Developing Smart Contracts and Planet-Scale Web 3.0 Dapps",
+        number: 4
+      },
+      {
+        header: "Quarter V",
+        description: "AI-361: Deep Learning and MLOps",
+        number: 5
+      }
+    ]
+  },
+  {
+    slug: "wmd",
+    header: "Web 3.0 (Blockchain) and Metaverse Specialization",
+    description:
+      "This Web 3.0 and Metaverse specialization focuses on developing full-stack Web 3.0 and Metaverse experiences for the next generation of the internet by specializing in building worlds that merge the best of cutting-edge decentralized distributed blockchains with 3D metaverse client experiences.",
+    image: Ai,
+    quarter: [
+      {
+        header: "Quarter IV",
+        description:
+          "W3-351: Developing Smart Contracts and Planet-Scale Web 3.0 Dapps",
+        number: 4
+      },
+      {
+        header: "Quarter V",
+        description: "AI-361: Deep Learning and MLOps",
+        number: 5
+      }
+    ]
+  },
+  {
+    slug: "wmd",
+    header: "Web 3.0 (Blockchain) and Metaverse Specialization",
+    description:
+      "This Web 3.0 and Metaverse specialization focuses on developing full-stack Web 3.0 and Metaverse experiences for the next generation of the internet by specializing in building worlds that merge the best of cutting-edge decentralized distributed blockchains with 3D metaverse client experiences.",
+    image: Ai,
+    quarter: [
+      {
+        header: "Quarter IV",
+        description:
+          "W3-351: Developing Smart Contracts and Planet-Scale Web 3.0 Dapps",
+        number: 4
+      },
+      {
+        header: "Quarter V",
+        description: "AI-361: Deep Learning and MLOps",
+        number: 5
+      }
+    ]
+  },
+  {
+    slug: "wmd",
+    header: "Web 3.0 (Blockchain) and Metaverse Specialization",
+    description:
+      "This Web 3.0 and Metaverse specialization focuses on developing full-stack Web 3.0 and Metaverse experiences for the next generation of the internet by specializing in building worlds that merge the best of cutting-edge decentralized distributed blockchains with 3D metaverse client experiences.",
+    image: Ai,
+    quarter: [
+      {
+        header: "Quarter IV",
+        description:
+          "W3-351: Developing Smart Contracts and Planet-Scale Web 3.0 Dapps",
+        number: 4
+      },
+      {
+        header: "Quarter V",
+        description: "AI-361: Deep Learning and MLOps",
+        number: 5
+      }
+    ]
+  },
+  {
+    slug: "wmd",
+    header: "Web 3.0 (Blockchain) and Metaverse Specialization",
+    description:
+      "This Web 3.0 and Metaverse specialization focuses on developing full-stack Web 3.0 and Metaverse experiences for the next generation of the internet by specializing in building worlds that merge the best of cutting-edge decentralized distributed blockchains with 3D metaverse client experiences.",
+    image: Ai,
+    quarter: [
+      {
+        header: "Quarter IV",
+        description:
+          "W3-351: Developing Smart Contracts and Planet-Scale Web 3.0 Dapps",
+        number: 4
+      },
+      {
+        header: "Quarter V",
+        description: "AI-361: Deep Learning and MLOps",
+        number: 5
+      }
+    ]
+  },
+  {
+    slug: "wmd",
+    header: "Web 3.0 (Blockchain) and Metaverse Specialization",
+    description:
+      "This Web 3.0 and Metaverse specialization focuses on developing full-stack Web 3.0 and Metaverse experiences for the next generation of the internet by specializing in building worlds that merge the best of cutting-edge decentralized distributed blockchains with 3D metaverse client experiences.",
+    image: Ai,
+    quarter: [
+      {
+        header: "Quarter IV",
+        description:
+          "W3-351: Developing Smart Contracts and Planet-Scale Web 3.0 Dapps",
+        number: 4
+      },
+      {
+        header: "Quarter V",
+        description: "AI-361: Deep Learning and MLOps",
+        number: 5
+      }
+    ]
+  },
+  {
+    slug: "wmd",
+    header: "Web 3.0 (Blockchain) and Metaverse Specialization",
+    description:
+      "This Web 3.0 and Metaverse specialization focuses on developing full-stack Web 3.0 and Metaverse experiences for the next generation of the internet by specializing in building worlds that merge the best of cutting-edge decentralized distributed blockchains with 3D metaverse client experiences.",
+    image: Ai,
+    quarter: [
+      {
+        header: "Quarter IV",
+        description:
+          "W3-351: Developing Smart Contracts and Planet-Scale Web 3.0 Dapps",
+        number: 4
+      },
+      {
+        header: "Quarter V",
+        description: "AI-361: Deep Learning and MLOps",
+        number: 5
+      }
+    ]
+  },
+  {
     slug: "ai",
     header: "Artificial Intelligence (AI) and Deep Learning Specialization",
     description:
@@ -70,9 +210,9 @@ const SpecalizedTracks = () => {
           select one or more specializations consisting of two courses each.
         </p>
         {/* Flex container for left and right columns */}
-        <div className="flex mt-10 gap-x-6 gap-y-4">
+        <div className="flex flex-col-reverse mt-10 gap-x-6 gap-y-4 lg:flex-row">
           {/* Left Column */}
-          <div className="flex-1 px-8 py-8 border shadow-xl rounded-xl border-slate-200 basis-8/12">
+          <div className="sticky self-start px-8 py-8 border shadow-xl top-28 rounded-xl border-slate-200 basis-8/12">
             <h4 className="text-lg font-medium text-primary">
               Specialized Track
             </h4>
@@ -84,9 +224,10 @@ const SpecalizedTracks = () => {
               Learn More <GoArrowRight className="mb-1.5 text-lg" />
             </button>
             {/* Quarter Boxes */}
-            <div className="flex gap-4 mt-8">
+            <div className="flex flex-col gap-4 mt-8 sm:flex-row">
               {selectedItemData?.quarter.map((item) => (
-                <QuaterBoxTwo key={item.header}
+                <QuaterBoxTwo
+                  key={item.number}
                   header={item.header}
                   description={item.description}
                   number={item.number}
@@ -96,7 +237,7 @@ const SpecalizedTracks = () => {
             </div>
           </div>
           {/* Right Column */}
-          <div className="flex-1 px-4 py-6 space-y-4 bg-slate-100 basis-4/12">
+          <div className="flex-1 px-4 py-6 space-y-4 basis-4/12">
             {programmData.map((item, i) => (
               <div
                 onClick={() => setSelectedItems(item.slug)}
@@ -123,6 +264,7 @@ const SpecalizedTracks = () => {
             ))}
           </div>
         </div>
+        <div className="h-screen"></div>
       </Wrapper>
     </section>
   );
