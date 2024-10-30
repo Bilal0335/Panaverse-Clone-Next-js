@@ -16,7 +16,7 @@ const ProgramOutcome = () => {
   return (
     <section className="mt-16 md:mt-28">
       <Wrapper>
-        <div className="flex flex-col items-center gap-x-8">
+        <div className="flex flex-col-reverse items-center gap-x-8 md:flex-row">
           {/* image left  */}
           <div className="flex-1">
             <Image src={outcome} alt="outcome image" />
