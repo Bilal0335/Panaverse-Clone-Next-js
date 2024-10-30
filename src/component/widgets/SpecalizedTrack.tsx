@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+// <<<<<<< HEAD
 // import Wrapper from "@/component/shared/Wrapper";
 // import SectionOne from "../shared/SectionOne";
 // import { GoArrowRight } from "react-icons/go";
@@ -66,7 +66,7 @@
 //   );
 // };
 
-=======
+// =======
 "use client";
 import Wrapper from "@/component/shared/Wrapper";
 import SectionOne from "../shared/SectionOne";
@@ -159,4 +159,4 @@ export const SpecalizedTrack = () => {
     </section>
   );
 };
->>>>>>> d5d43bf538d3df902ec50c2dbacfa358db8b41bc
+// >>>>>>> d5d43bf538d3df902ec50c2dbacfa358db8b41bc

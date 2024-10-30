@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+// <<<<<<< HEAD
 // "use client";
 // import Image from "next/image";
 // import Ai from "@/assets/image/image4.jpg"; // Ensure this path is correct
@@ -84,7 +84,7 @@
 //     </div>
 //   );
 // };
-=======
+// =======
 "use client";
 import Image from "next/image";
 import Ai from "@/assets/image/image4.jpg"; // Ensure this path is correct
@@ -176,6 +176,6 @@ const ProgrammDataTwo: React.FC<ProgrammDataTwoProps> = ({
     </div>
   );
 };
->>>>>>> d5d43bf538d3df902ec50c2dbacfa358db8b41bc
+// >>>>>>> d5d43bf538d3df902ec50c2dbacfa358db8b41bc
 
-// export default ProgrammDataTwo;
+export default ProgrammDataTwo;
