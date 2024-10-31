@@ -1,20 +1,31 @@
 import Image from "next/image";
 import Wrapper from "../shared/Wrapper";
 import footerLogo from "@/assets/image/image1.jpg";
+const footerLink = [
+  "Web 3.0 and Metaverse Developer",
+  ,
+  "Artificial Intelligence",
+  "Cloud-Native Computing",
+  "Ambient Computing and IoT",
+  "Genomics and Bioinformatics",
+  "Network Programmability and Automation"
+];
+const footerPage = ["Home", "Quarter 1", "Quarter 2", "Quarter 3"];
 const Footer = () => {
   return (
-    <footer>
+    <footer className="">
       <Wrapper>
-        <div>
+        <div className="flex gap-20 mt-10 mb-10">
           {/* left content */}
           <div>
             <Image
               src={footerLogo}
               alt="Panaverse DAO Logo"
-              width={98}
-              height={56}
+              width={170}
+              height={76}
+              className="mb-5"
             />
-            <p>
+            <p className="max-w-md mb-5 font-medium text-lg text-[#8d9494c9]">
               Certified Web 3.0 and Metaverse Developer A One and Quarter Years
               Panaverse DAO Earn as you Learn Program Getting Ready for the Next
               Generation of the Internet
@@ -36,7 +47,7 @@ const Footer = () => {
                     width="1em"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
+                    <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
                   </svg>
                 </div>
               </a>
@@ -123,7 +134,26 @@ const Footer = () => {
             </div>
           </div>
           {/* right content */}
-          <div></div>
+          <div className="mt-10 space-y-2">
+            <h4 className="text-xl font-bold">Programs</h4>
+            {footerLink.map((item) => (
+              <div key={item} className="max-w-md ">
+                <a href="" className="text-gray-500 transition-transform duration-700 hover:text-primary hover:scale-105">
+                  {item}
+                </a>
+              </div>
+            ))}
+          </div>
+          <div className="mt-10 space-y-2">
+            <h4 className="text-xl font-bold">Pages</h4>
+            {footerPage.map((item) => (
+              <div key={item}>
+                <a href="" className="text-gray-500 transition-transform duration-700 text-grey-500 hover:text-primary hover:scale-105">
+                  {item}
+                </a>
+              </div>
+            ))}
+          </div>
         </div>
       </Wrapper>
     </footer>
