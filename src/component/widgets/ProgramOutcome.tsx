@@ -4,11 +4,8 @@ import outcome from "@/assets/image/image10.jpg";
 
 const outcomePopints = [
   "Product Ownership",
-
-  "Freelacing",
-
+  "Freelancing",
   "Global Marketing by Panaverse DAO",
-
   "Boosting Economy."
 ];
 
@@ -16,12 +13,12 @@ const ProgramOutcome = () => {
   return (
     <section className="mt-16 md:mt-28">
       <Wrapper>
-        <div className="flex flex-col-reverse items-center gap-x-8 md:flex-row">
-          {/* image left  */}
+        <div className="flex flex-col-reverse items-center mb-[66px] gap-x-8 md:flex-row">
+          {/* image left */}
           <div className="flex-1">
             <Image src={outcome} alt="outcome image" />
           </div>
-          {/* right content   */}
+          {/* right content */}
           <div className="flex-1">
             <h2 className="text-5xl font-bold">
               The Outcome for Participants of the Program
@@ -32,16 +29,16 @@ const ProgramOutcome = () => {
               are marketed globally by the Panaverse DAO. You will also have the
               opportunity to offer your services at a rate of $50 per hour,
               providing a path to financial stability while contributing to the
-              growth of Pakistans software exports.
+              growth of Pakistan&#39;s software exports.
             </p>
             <div className="grid grid-cols-2 mt-6 gap-x-2 gap-y-4">
               {outcomePopints.map((item, i) => (
                 <div key={i} className="flex items-center space-x-2">
                   <svg
-                    className="flex-none flex-shrink-0 w-8 h-8 xs:h-10 xs:w-10"
-                    width="52"
-                    height="52"
-                    viewBox="0 0 52 52"
+                    className="flex-none flex-shrink-0 w-12 h-12 xs:h-14 xs:w-14" // Adjusted Tailwind sizes
+                    width="60" // Adjusted SVG width
+                    height="60" // Adjusted SVG height
+                    viewBox="0 0 60 60" // Updated to match width/height
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -75,7 +72,9 @@ const ProgramOutcome = () => {
             </div>
           </div>
         </div>
+
       </Wrapper>
+        <div className="w-full h-0.5 mt-1 bg-lineColor"></div>
     </section>
   );
 };

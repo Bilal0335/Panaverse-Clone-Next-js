@@ -1,5 +1,7 @@
+import Footer from "@/component/layout/Footer"; // Corrected path
 import "./globals.css";
-import Header from "@/component/layout/Header";
+import Header from "@/component/layout/Header"; // Corrected path
+
 export default function RootLayout({
   children
 }: Readonly<{
@@ -11,6 +13,8 @@ export default function RootLayout({
         {/* Header */}
         <Header />
         {children}
+        {/* Footer */}
+        <Footer />
       </body>
     </html>
   );
