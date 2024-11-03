@@ -8,14 +8,14 @@ const footerLink = [
   "Cloud-Native Computing",
   "Ambient Computing and IoT",
   "Genomics and Bioinformatics",
-  "Network Programmability and Automation"
+  "Network Programmability and \nAutomation"
 ];
 const footerPage = ["Home", "Quarter 1", "Quarter 2", "Quarter 3"];
 const Footer = () => {
   return (
     <footer className="">
       <Wrapper>
-        <div className="flex gap-20 mt-10 mb-10">
+        <div className="flex flex-col gap-10 mt-10 mb-10 sm:flex-row">
           {/* left content */}
           <div>
             <Image
@@ -25,7 +25,7 @@ const Footer = () => {
               height={76}
               className="mb-5"
             />
-            <p className="max-w-md mb-5 font-medium text-lg text-[#8d9494c9]">
+            <p className="max-w-md mb-5 font-semibold text-md text-[#8d9494c9]">
               Certified Web 3.0 and Metaverse Developer A One and Quarter Years
               Panaverse DAO Earn as you Learn Program Getting Ready for the Next
               Generation of the Internet
@@ -80,7 +80,7 @@ const Footer = () => {
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
-                    stroke-width="0"
+                    strokeWidth="0"
                     viewBox="0 0 576 512"
                     className="w-4 h-4 text-white"
                     height="1em"
@@ -100,7 +100,7 @@ const Footer = () => {
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
-                    stroke-width="0"
+                    strokeWidth="0"
                     viewBox="0 0 496 512"
                     className="w-4 h-4 text-white"
                     height="1em"
@@ -120,7 +120,7 @@ const Footer = () => {
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
-                    stroke-width="0"
+                    strokeWidth="0"
                     viewBox="0 0 512 512"
                     className="w-4 h-4 text-white"
                     height="1em"
@@ -134,21 +134,27 @@ const Footer = () => {
             </div>
           </div>
           {/* right content */}
-          <div className="mt-10 space-y-2">
+          <div className="space-y-2 ">
             <h4 className="text-xl font-bold">Programs</h4>
             {footerLink.map((item) => (
               <div key={item} className="max-w-md ">
-                <a href="" className="text-gray-500 transition-transform duration-700 hover:text-primary hover:scale-105">
+                <a
+                  href=""
+                  className="text-gray-500 transition-transform duration-700 hover:text-primary hover:scale-105"
+                >
                   {item}
                 </a>
               </div>
             ))}
           </div>
-          <div className="mt-10 space-y-2">
+          <div className="space-y-2">
             <h4 className="text-xl font-bold">Pages</h4>
             {footerPage.map((item) => (
               <div key={item}>
-                <a href="" className="text-gray-500 transition-transform duration-700 text-grey-500 hover:text-primary hover:scale-105">
+                <a
+                  href=""
+                  className="text-gray-500 transition-transform duration-700 text-grey-500 hover:text-primary hover:scale-105"
+                >
                   {item}
                 </a>
               </div>
