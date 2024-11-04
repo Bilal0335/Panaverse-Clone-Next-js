@@ -220,8 +220,9 @@ const SpecalizedTracks = () => {
             <p className="mt-2 text-lg text-slate-600">
               {selectedItemData?.description}
             </p>
-            <button className="flex items-end justify-center mt-4 text-xl underline text-primary gap-x-2">
-              Learn More <GoArrowRight className="mb-1.5 text-lg" />
+            <button className="flex items-center px-4 py-2 mt-4 text-lg font-semibold text-teal-700 border border-teal-700 rounded-lg hover:bg-slate-100 group">
+              Learn More
+              <GoArrowRight className="mx-auto ml-1 transition-transform group-hover:translate-x-1" />
             </button>
             {/* Quarter Boxes */}
             <div className="flex flex-col gap-4 mt-8 sm:flex-row">

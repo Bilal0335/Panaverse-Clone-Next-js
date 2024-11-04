@@ -15,7 +15,7 @@ const ProgramOutcome = () => {
       <Wrapper>
         <div className="flex flex-col-reverse items-center mb-[66px] gap-x-8 md:flex-row">
           {/* image left */}
-          <div className="flex-1">
+          <div className="flex-1 mt-5">
             <Image src={outcome} alt="outcome image" />
           </div>
           {/* right content */}
@@ -35,10 +35,10 @@ const ProgramOutcome = () => {
               {outcomePopints.map((item, i) => (
                 <div key={i} className="flex items-center space-x-2">
                   <svg
-                    className="flex-none flex-shrink-0 w-12 h-12 xs:h-14 xs:w-14" // Adjusted Tailwind sizes
-                    width="60" // Adjusted SVG width
-                    height="60" // Adjusted SVG height
-                    viewBox="0 0 60 60" // Updated to match width/height
+                    className="flex-none flex-shrink-0 w-12 h-12 xs:h-14 xs:w-14"
+                    width="60" 
+                    height="60" 
+                    viewBox="0 0 60 60"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
