@@ -3,21 +3,25 @@ import Wrapper from "@/component/shared/Wrapper";
 import { GoArrowRight } from "react-icons/go";
 import QuaterBoxTwo from "@/component/shared/QuaterBoxTwo";
 import Image from "next/image";
-import Ai from "@/assets/image/image4.jpg";
-import Wim from "@/assets/image/image5.jpg";
+import BlockChain from "@/assets/image/BlockChain.jpg";
+import CloudNative from "@/assets/image/CloudNative.jpg";
+import Ambient from "@/assets/image/Ambient.jpg";
+import Genomics from "@/assets/image/Genomics.jpg";
+import Network from "@/assets/image/Network.jpg";
+import AI from "@/assets/image/AI.jpg";
 import { useState } from "react";
+
 export const programmData = [
   {
-    slug: "wmd",
+    slug: "wms",
     header: "Web 3.0 (Blockchain) and Metaverse Specialization",
     description:
       "This Web 3.0 and Metaverse specialization focuses on developing full-stack Web 3.0 and Metaverse experiences for the next generation of the internet by specializing in building worlds that merge the best of cutting-edge decentralized distributed blockchains with 3D metaverse client experiences.",
-    image: Ai,
+    image: BlockChain,
     quarter: [
       {
         header: "Quarter IV",
-        description:
-          "W3-351: Developing Smart Contracts and Planet-Scale Web 3.0 Dapps",
+        description: "W3-351: Developing Smart Contracts and Planet-Scale Web 3.0 Dapps",
         number: 4
       },
       {
@@ -28,161 +32,96 @@ export const programmData = [
     ]
   },
   {
-    slug: "wmd",
-    header: "Web 3.0 (Blockchain) and Metaverse Specialization",
-    description:
-      "This Web 3.0 and Metaverse specialization focuses on developing full-stack Web 3.0 and Metaverse experiences for the next generation of the internet by specializing in building worlds that merge the best of cutting-edge decentralized distributed blockchains with 3D metaverse client experiences.",
-    image: Ai,
-    quarter: [
-      {
-        header: "Quarter IV",
-        description:
-          "W3-351: Developing Smart Contracts and Planet-Scale Web 3.0 Dapps",
-        number: 4
-      },
-      {
-        header: "Quarter V",
-        description: "AI-361: Deep Learning and MLOps",
-        number: 5
-      }
-    ]
-  },
-  {
-    slug: "wmd",
-    header: "Web 3.0 (Blockchain) and Metaverse Specialization",
-    description:
-      "This Web 3.0 and Metaverse specialization focuses on developing full-stack Web 3.0 and Metaverse experiences for the next generation of the internet by specializing in building worlds that merge the best of cutting-edge decentralized distributed blockchains with 3D metaverse client experiences.",
-    image: Ai,
-    quarter: [
-      {
-        header: "Quarter IV",
-        description:
-          "W3-351: Developing Smart Contracts and Planet-Scale Web 3.0 Dapps",
-        number: 4
-      },
-      {
-        header: "Quarter V",
-        description: "AI-361: Deep Learning and MLOps",
-        number: 5
-      }
-    ]
-  },
-  {
-    slug: "wmd",
-    header: "Web 3.0 (Blockchain) and Metaverse Specialization",
-    description:
-      "This Web 3.0 and Metaverse specialization focuses on developing full-stack Web 3.0 and Metaverse experiences for the next generation of the internet by specializing in building worlds that merge the best of cutting-edge decentralized distributed blockchains with 3D metaverse client experiences.",
-    image: Ai,
-    quarter: [
-      {
-        header: "Quarter IV",
-        description:
-          "W3-351: Developing Smart Contracts and Planet-Scale Web 3.0 Dapps",
-        number: 4
-      },
-      {
-        header: "Quarter V",
-        description: "AI-361: Deep Learning and MLOps",
-        number: 5
-      }
-    ]
-  },
-  {
-    slug: "wmd",
-    header: "Web 3.0 (Blockchain) and Metaverse Specialization",
-    description:
-      "This Web 3.0 and Metaverse specialization focuses on developing full-stack Web 3.0 and Metaverse experiences for the next generation of the internet by specializing in building worlds that merge the best of cutting-edge decentralized distributed blockchains with 3D metaverse client experiences.",
-    image: Ai,
-    quarter: [
-      {
-        header: "Quarter IV",
-        description:
-          "W3-351: Developing Smart Contracts and Planet-Scale Web 3.0 Dapps",
-        number: 4
-      },
-      {
-        header: "Quarter V",
-        description: "AI-361: Deep Learning and MLOps",
-        number: 5
-      }
-    ]
-  },
-  {
-    slug: "wmd",
-    header: "Web 3.0 (Blockchain) and Metaverse Specialization",
-    description:
-      "This Web 3.0 and Metaverse specialization focuses on developing full-stack Web 3.0 and Metaverse experiences for the next generation of the internet by specializing in building worlds that merge the best of cutting-edge decentralized distributed blockchains with 3D metaverse client experiences.",
-    image: Ai,
-    quarter: [
-      {
-        header: "Quarter IV",
-        description:
-          "W3-351: Developing Smart Contracts and Planet-Scale Web 3.0 Dapps",
-        number: 4
-      },
-      {
-        header: "Quarter V",
-        description: "AI-361: Deep Learning and MLOps",
-        number: 5
-      }
-    ]
-  },
-  {
-    slug: "wmd",
-    header: "Web 3.0 (Blockchain) and Metaverse Specialization",
-    description:
-      "This Web 3.0 and Metaverse specialization focuses on developing full-stack Web 3.0 and Metaverse experiences for the next generation of the internet by specializing in building worlds that merge the best of cutting-edge decentralized distributed blockchains with 3D metaverse client experiences.",
-    image: Ai,
-    quarter: [
-      {
-        header: "Quarter IV",
-        description:
-          "W3-351: Developing Smart Contracts and Planet-Scale Web 3.0 Dapps",
-        number: 4
-      },
-      {
-        header: "Quarter V",
-        description: "AI-361: Deep Learning and MLOps",
-        number: 5
-      }
-    ]
-  },
-  {
-    slug: "wmd",
-    header: "Web 3.0 (Blockchain) and Metaverse Specialization",
-    description:
-      "This Web 3.0 and Metaverse specialization focuses on developing full-stack Web 3.0 and Metaverse experiences for the next generation of the internet by specializing in building worlds that merge the best of cutting-edge decentralized distributed blockchains with 3D metaverse client experiences.",
-    image: Ai,
-    quarter: [
-      {
-        header: "Quarter IV",
-        description:
-          "W3-351: Developing Smart Contracts and Planet-Scale Web 3.0 Dapps",
-        number: 4
-      },
-      {
-        header: "Quarter V",
-        description: "AI-361: Deep Learning and MLOps",
-        number: 5
-      }
-    ]
-  },
-  {
-    slug: "ai",
+    slug: "AI",
     header: "Artificial Intelligence (AI) and Deep Learning Specialization",
     description:
       "The AI and Deep Learning specialization focuses on building and deploying intelligent APIs using OpenAI models and building custom Deep Learning Tensorflow models.",
-    image: Wim,
+    image: AI,
     quarter: [
       {
         header: "Quarter IV",
-        description:
-          "AI-351: Developing Planet-Scale Intelligent APIs and Python Programming",
+        description: "Bio-351: Python for Biologists",
         number: 4
       },
       {
         header: "Quarter V",
-        description: "AI-361: Deep Learning and MLOps",
+        description: "Bio-361: Bioinformatics with Python",
+        number: 5
+      }
+    ]
+  },
+  {
+    slug: "cnc",
+    header: "Cloud-Native Computing Specialization",
+    description:
+      "The Cloud-Native Computing Specialization focuses on Containers, Kubernetes, and CDK for Kubernetes.",
+    image: CloudNative,
+    quarter: [
+      {
+        header: "Quarter IV",
+        description: "CN-351: Certified Kubernetes Application Developer (CKAD)",
+        number: 4
+      },
+      {
+        header: "Quarter V",
+        description: "CN-361: Developing Multi-Cloud Apps using CDK for Terraform",
+        number: 5
+      }
+    ]
+  },
+  {
+    slug: "ac",
+    header: "Ambient Computing and IoT Specialization",
+    description:
+      "The Ambient Computing and IoT Specialization focuses on building Smart Homes, Offices, Factories, and Cities using Voice computing, Matter Protocol, and Embedded Devices.",
+    image: Ambient,
+    quarter: [
+      {
+        header: "Quarter IV",
+        description: "AC-351: Ambient Computing with Voice Assistants and Matter Devices",
+        number: 4
+      },
+      {
+        header: "Quarter V",
+        description: "AC-361: Embedded Programming using C and Rust",
+        number: 5
+      }
+    ]
+  },
+  {
+    slug: "gbs",
+    header: "Genomics and Bioinformatics Specialization",
+    description:
+      "Genomics is the study of the total genetic makeup of individual organisms, and how this genetic information is structured, functions, and has evolved; bioinformatics encompasses a diverse range of analytical methods and tools applied to genomic data. This Specialization focuses on performing complex bioinformatics analysis using the most essential Python libraries and applications.",
+    image: Genomics,
+    quarter: [
+      {
+        header: "Quarter IV",
+        description: "Bio-351: Python for Biologists",
+        number: 4
+      },
+      {
+        header: "Quarter V",
+        description: "Bio-361: Bioinformatics with Python",
+        number: 5
+      }
+    ]
+  },
+  {
+    slug: "npas",
+    header: "Network Programmability and Automation Specialization",
+    description:
+      "More than ever, network engineers are finding it challenging to complete their duties entirely manually. Network automation is now crucial due to new protocols, technologies, delivery models, and the requirement for enterprises to become more adaptable and agile. This course teaches network engineers how to automate systems with code using a variety of technologies and tools, including Linux, Python, APIs, and Git.",
+    image: Network,
+    quarter: [
+      {
+        header: "Quarter IV",
+        description: "NPA-351: CCNA 200-301 Certification",
+        number:4
+      },
+      {
+        header: "Quarter V",
+        description: "NPA-361: Network Programmability and Automation",
         number: 5
       }
     ]
@@ -190,14 +129,12 @@ export const programmData = [
 ];
 
 const SpecalizedTracks = () => {
-  const [selectItems, setSelectedItems] = useState("wmd");
+  const [selectItems, setSelectedItems] = useState("wms");
 
   const selectedItemData = programmData.find(
     (item) => item.slug === selectItems
   );
 
-  console.log(selectItems);
-  // console.log(selectedItemData);
   return (
     <section>
       <Wrapper>
@@ -245,13 +182,11 @@ const SpecalizedTracks = () => {
                 key={i}
                 className="flex items-center cursor-pointer gap-x-4"
               >
-                {/* <div className="w-20 h-16 bg-red-200 rounded"></div> */}
-
                 <div className="flex-shrink-0 h-24 w-36">
                   <Image
-                    src={item.image ? item.image : Ai}
+                    src={item.image}
                     alt={item.header}
-                    className={"object-cover h-24 w-48 rounded-md"}
+                    className="object-cover w-48 h-24 rounded-md"
                   />
                 </div>
                 <div>
@@ -261,7 +196,6 @@ const SpecalizedTracks = () => {
                   <h3 className="text-lg font-semibold">{item.header}</h3>
                 </div>
               </div>
-              // {/* Underline */}
             ))}
           </div>
         </div>
