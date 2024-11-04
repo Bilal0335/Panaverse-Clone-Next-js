@@ -21,7 +21,8 @@ export const programmData = [
     quarter: [
       {
         header: "Quarter IV",
-        description: "W3-351: Developing Smart Contracts and Planet-Scale Web 3.0 Dapps",
+        description:
+          "W3-351: Developing Smart Contracts and Planet-Scale Web 3.0 Dapps",
         number: 4
       },
       {
@@ -59,12 +60,14 @@ export const programmData = [
     quarter: [
       {
         header: "Quarter IV",
-        description: "CN-351: Certified Kubernetes Application Developer (CKAD)",
+        description:
+          "CN-351: Certified Kubernetes Application Developer (CKAD)",
         number: 4
       },
       {
         header: "Quarter V",
-        description: "CN-361: Developing Multi-Cloud Apps using CDK for Terraform",
+        description:
+          "CN-361: Developing Multi-Cloud Apps using CDK for Terraform",
         number: 5
       }
     ]
@@ -78,7 +81,8 @@ export const programmData = [
     quarter: [
       {
         header: "Quarter IV",
-        description: "AC-351: Ambient Computing with Voice Assistants and Matter Devices",
+        description:
+          "AC-351: Ambient Computing with Voice Assistants and Matter Devices",
         number: 4
       },
       {
@@ -117,7 +121,7 @@ export const programmData = [
       {
         header: "Quarter IV",
         description: "NPA-351: CCNA 200-301 Certification",
-        number:4
+        number: 4
       },
       {
         header: "Quarter V",
@@ -180,7 +184,7 @@ const SpecalizedTracks = () => {
               <div
                 onClick={() => setSelectedItems(item.slug)}
                 key={i}
-                className="flex items-center cursor-pointer gap-x-4"
+                className="relative flex items-center cursor-pointer gap-x-4"
               >
                 <div className="flex-shrink-0 h-24 w-36">
                   <Image
@@ -195,6 +199,7 @@ const SpecalizedTracks = () => {
                   </h4>
                   <h3 className="text-lg font-semibold">{item.header}</h3>
                 </div>
+                {/* Conditional Underline for Selected Item */}
               </div>
             ))}
           </div>
