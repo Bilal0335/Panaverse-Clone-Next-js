@@ -184,22 +184,30 @@ const SpecalizedTracks = () => {
               <div
                 onClick={() => setSelectedItems(item.slug)}
                 key={i}
-                className="relative flex items-center cursor-pointer gap-x-4"
+                className="relative py-3 cursor-pointer gap-x-4"
               >
-                <div className="flex-shrink-0 h-24 w-36">
-                  <Image
-                    src={item.image}
-                    alt={item.header}
-                    className="object-cover w-48 h-24 rounded-md"
-                  />
+                {/* Container for Image and Text */}
+                <div className="flex items-center gap-x-4">
+                  {/* Image */}
+                  <div className="relative flex-shrink-0">
+                    <Image
+                      src={item.image}
+                      alt={item.header}
+                      className="object-cover h-24 rounded-md w-36"
+                    />
+                  </div>
+
+                  {/* Text Content */}
+                  <div>
+                    <h4 className="font-medium text-primary">
+                      Specialized Track
+                    </h4>
+                    <h3 className="text-lg font-semibold">{item.header}</h3>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="font-medium text-primary">
-                    Specialized Track
-                  </h4>
-                  <h3 className="text-lg font-semibold">{item.header}</h3>
-                </div>
-                {/* Conditional Underline for Selected Item */}
+                {/* Underline below both image and text with increased spacing */}
+                <div className="w-full h-0.5 bg-gray-400-700 mt-4 border "></div>{" "}
+                {/* Adjusted margin-top */}
               </div>
             ))}
           </div>
