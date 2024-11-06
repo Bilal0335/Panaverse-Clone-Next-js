@@ -18,8 +18,13 @@ const ProgramOutcome = () => {
           <div className="flex-1 mt-5">
             <Image src={outcome} alt="outcome image" />
           </div>
+
           {/* right content */}
-          <div className="flex-1">
+          {/* <div className="w-[84px] h-[84px] rounded-full bg-gradient-to-r from-teal-400 to-teal-600 shadow-xl"></div> */}
+
+          <div className="relative flex-1">
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-teal-50 to-teal-100 -z-10 shadow-[0_0_50px_100px_rgba(5,193,156,0.1)] blur-3xl"></div>
+
             <h2 className="text-5xl font-bold">
               The Outcome for Participants of the Program
             </h2>
@@ -36,8 +41,8 @@ const ProgramOutcome = () => {
                 <div key={i} className="flex items-center space-x-2">
                   <svg
                     className="flex-none flex-shrink-0 w-12 h-12 xs:h-14 xs:w-14"
-                    width="60" 
-                    height="60" 
+                    width="60"
+                    height="60"
                     viewBox="0 0 60 60"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -72,9 +77,8 @@ const ProgramOutcome = () => {
             </div>
           </div>
         </div>
-
       </Wrapper>
-        <div className="w-full h-0.5 mt-1 bg-lineColor"></div>
+      <div className="w-full h-0.5 mt-1 bg-lineColor"></div>
     </section>
   );
 };
