@@ -139,7 +139,7 @@ const Footer = () => {
             {footerLink.map((item) => (
               <div key={item} className="max-w-md ">
                 <a
-                  href=""
+                  href="#"
                   className="text-gray-500 transition-transform duration-700 hover:text-primary hover:scale-105"
                 >
                   {item}
@@ -152,7 +152,7 @@ const Footer = () => {
             {footerPage.map((item) => (
               <div key={item}>
                 <a
-                  href=""
+                  href="#"
                   className="text-gray-500 transition-transform duration-700 text-grey-500 hover:text-primary hover:scale-105"
                 >
                   {item}
