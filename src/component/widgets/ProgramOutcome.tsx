@@ -36,8 +36,8 @@ const ProgramOutcome = () => {
                 <div key={i} className="flex items-center space-x-2">
                   <svg
                     className="flex-none flex-shrink-0 w-12 h-12 xs:h-14 xs:w-14"
-                    width="60" 
-                    height="60" 
+                    width="60"
+                    height="60"
                     viewBox="0 0 60 60"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -72,9 +72,8 @@ const ProgramOutcome = () => {
             </div>
           </div>
         </div>
-
       </Wrapper>
-        <div className="w-full h-0.5 mt-1 bg-lineColor"></div>
+      <div className="w-full h-0.5 mt-1 bg-lineColor"></div>
     </section>
   );
 };

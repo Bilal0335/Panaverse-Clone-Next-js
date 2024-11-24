@@ -13,6 +13,9 @@ module.exports = {
       colors: {
         primary: "#00616C",
         lineColor: "#E2E8F0"
+      },
+      boxShadow: {
+        teal: "0 10px 15px -3px rgba(0, 128, 128, 0.5), 0 4px 6px -2px rgba(0, 128, 128, 0.3)"
       }
     }
   },
