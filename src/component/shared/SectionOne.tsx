@@ -17,7 +17,8 @@ const SectionOne: FC<SectProps> = ({
   subdescription
 }) => {
   return (
-    <div>
+    <div className="relative">
+       <div className="absolute inset-0 rounded-full bg-gradient-to-l from-teal-50 to-teal-100 -z-10 shadow-[0_0_50px_100px_rgba(5,193,156,0.1)] blur-3xl"></div>
       <h4 className="text-lg font-semibold text-teal-800">{subtitle}</h4>
       <h1
         className={`font-bold leading-tight text-gray-900 ${titleClassName} ${whiteSpace}`}

@@ -18,8 +18,13 @@ const ProgramOutcome = () => {
           <div className="flex-1 mt-5">
             <Image src={outcome} alt="outcome image" />
           </div>
+
           {/* right content */}
-          <div className="flex-1">
+          {/* <div className="w-[84px] h-[84px] rounded-full bg-gradient-to-r from-teal-400 to-teal-600 shadow-xl"></div> */}
+
+          <div className="relative flex-1">
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-teal-50 to-teal-100 -z-10 shadow-[0_0_50px_100px_rgba(5,193,156,0.1)] blur-3xl"></div>
+
             <h2 className="text-5xl font-bold">
               The Outcome for Participants of the Program
             </h2>

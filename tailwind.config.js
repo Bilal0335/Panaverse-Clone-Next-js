@@ -15,7 +15,11 @@ module.exports = {
         lineColor: "#E2E8F0"
       },
       boxShadow: {
+<<<<<<< HEAD
         teal: "0 10px 15px -3px rgba(0, 128, 128, 0.5), 0 4px 6px -2px rgba(0, 128, 128, 0.3)"
+=======
+        "custom-teal": "0px 4px 15px rgba(5, 193, 156, 0.7)"
+>>>>>>> e137d3801ec7ecb190438affae9dc844a81412d7
       }
     }
   },
