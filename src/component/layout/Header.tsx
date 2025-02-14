@@ -11,12 +11,14 @@ const Header = () => {
         <div className="flex items-center justify-between py-4 ">
           <div>
             {/* <h2 className="text-xl font-bold">Panaverse Logo</h2> */}
+            <Link href={"/"}>
             <Image
               src={logo}
               alt="Panaverse DAO Logo"
               width={100}
               height={56}
             />
+            </Link>
           </div>
           {/* Navigation Bar */}
           <ul className="flex space-x-8 font-medium ">
