@@ -10,7 +10,6 @@ const Header = () => {
       <Wrapper>
         <div className="flex items-center justify-between py-4 ">
           <div>
-            {/* <h2 className="text-xl font-bold">Panaverse Logo</h2> */}
             <Link href={"/"}>
             <Image
               src={logo}
@@ -24,7 +23,7 @@ const Header = () => {
           <ul className="flex space-x-8 font-medium ">
             <li>
               <Link
-                href={"/"}
+                href={"#"}
                 className="transition-colors duration-200 hover:text-primary"
               >
                 Home
@@ -32,7 +31,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                href={"/course"}
+                href={"#"}
                 className="flex items-center transition-transform duration-200 ease-in-out hover:text-primary group "
               >
                 Course{" "}

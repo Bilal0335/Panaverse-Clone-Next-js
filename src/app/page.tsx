@@ -1,6 +1,5 @@
 import CoreTrack from "@/component/widgets/CoreTrack";
 import Hero from "@/component/widgets/Hero";
-// import { SpecalizedTrack } from "@/component/widgets/SpecalizedTrack";
 import SpecalizedTracks from "@/component/widgets/SpecalizedTracks";
 import ProgramOutcome from "@/component/widgets/ProgramOutcome";
 export default function Home() {
